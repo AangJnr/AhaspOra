@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="150dp"
+
+    >
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        android:padding="@dimen/spacing_normal"
+
+        >
+
+
+
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/visa_card"
+         />
+
+
+        <TextView
+            android:id="@+id/value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             android:text="4424  2314  3214  2342"
+            android:gravity="center"
+            android:fontFamily="sans-serif-light"
+            style="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@android:color/primary_text_light"
+             />
+
+
+        <LinearLayout
+            android:id="@+id/expiry_layout"
+            android:visibility="visible"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_normal"
+             >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Expires:"
+                android:fontFamily="sans-serif-light"
+                 android:layout_marginRight="@dimen/spacing_quarter"
+                android:textColor="@color/text_black_87"
+                 />
+
+
+            <TextView
+                android:id="@+id/expiry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="03/19"
+                android:textColor="@color/text_black_87"
+                android:fontFamily="sans-serif-light"
+                 android:layout_marginRight="@dimen/spacing_quarter"
+                />
+
+
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+
+
+</android.support.v7.widget.CardView>

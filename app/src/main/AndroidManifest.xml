@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          package="com.app.ahaspora">
+
+
+
+    <uses-sdk tools:overrideLibrary="com.yalantis.filter, com.amirarcane.recentimages"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+
+
+
+
+    <application
+        android:name=".AhasporaApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activities.SplashActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".activities.SettingsActivity"
+            android:label="@string/settings"/>
+        <activity android:name=".activities.MainActivity"/>
+        <activity android:name=".activities.LoginActivity"
+            android:theme="@style/LoginTheme"
+            />
+        <activity android:name=".activities.PaymentsActivity"
+            android:theme="@style/AppTheme_2"
+            />
+        <activity android:name=".activities.DetailedJobListingActivity"
+                  android:theme="@style/AppTheme_2"
+
+            />
+        <activity android:name=".activities.BaseActivity" />
+        <activity
+            android:name=".activities.StatusUpdateActivity"
+            android:excludeFromRecents="true"
+            android:windowSoftInputMode="adjustNothing"
+            android:theme="@style/Theme.Transparent"/>
+        <activity android:name=".activities.CommentsActivity"
+            android:theme="@style/AppTheme_2"/>
+        <activity android:name=".activities.ImageViewActivity" />
+        <activity android:name=".activities.UserProfileActivity"
+            android:theme="@style/AppTheme_2"
+            />
+        <activity android:name=".activities.SetupPaymentsActivity"
+            android:theme="@style/AppTheme_2"
+            />
+        <activity android:name=".activities.DetailedEventActivity"
+            android:windowSoftInputMode="stateHidden"
+            />
+
+    </application>
+
+</manifest>

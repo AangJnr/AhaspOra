@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+
+    <item
+        android:id="@+id/starred_group"
+        android:title="@string/starred"
+        android:icon="@drawable/ic_star_white_24dp"
+         >
+    <menu
+         >
+
+        <item android:id="@+id/starred_messages"
+            android:title="@string/posts" />
+
+         <item android:id="@+id/starred_jobs"
+              android:title="@string/jobs" />
+
+        <item android:id="@+id/starred_events"
+              android:title="@string/events" />
+
+        <item android:id="@+id/starred_recommendations"
+              android:title="@string/recommendations" />
+
+
+    </menu>
+
+    </item>
+
+
+
+
+    <group android:checkableBehavior="single">
+
+    <item
+        android:id="@+id/payments"
+        android:title="@string/payments"
+        android:orderInCategory="200"
+        android:icon="@drawable/ic_payment_grey_500_24dp"
+        app:showAsAction="never" />
+
+    <item
+        android:orderInCategory="300"
+        android:id="@+id/settings"
+        android:title="@string/settings"
+        android:icon="@drawable/ic_settings_white_24dp"
+        app:showAsAction="never" />
+
+
+    </group>
+
+</menu>

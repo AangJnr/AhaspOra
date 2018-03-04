@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/email"
+            android:icon="@drawable/ic_email_blue_24dp"
+            android:title="Email"
+            />
+        <item
+            android:id="@+id/website"
+            android:icon="@drawable/ic_language_blue_24dp"
+            android:title="Website"/>
+
+        <item
+            android:id="@+id/twitter"
+            android:icon="@drawable/ic_share_blue_24dp"
+            android:title="Twitter"/>
+
+
+        <item
+            android:id="@+id/location"
+            android:icon="@drawable/ic_location_on_blue_24dp"
+            android:title="Location"/>
+
+
+    </group>
+</menu>

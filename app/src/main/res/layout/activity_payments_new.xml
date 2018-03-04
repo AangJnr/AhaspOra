@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                 xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                 android:orientation="vertical"
+                                                 android:layout_width="match_parent"
+                                                 android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        >
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:theme="@style/AppBarToolbar"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp"
+            app:popupTheme="@style/Theme.AppCompat.NoActionBar"
+          />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            >
+
+            <TextView
+                android:id="@+id/title"
+                style="@style/TextAppearance.AppCompat.Medium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/spacing_normal"
+                android:paddingTop="@dimen/spacing_normal"
+                android:paddingBottom="@dimen/spacing_quarter"
+                android:paddingRight="@dimen/spacing_normal"
+                android:fontFamily="sans-serif-light"
+                android:textStyle="bold"
+                android:textColor="@android:color/primary_text_light"
+                android:text="Choose your payment method"
+
+                />
+
+
+            <TextView
+                style="@style/TextAppearance.AppCompat.Small"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/spacing_normal"
+                android:fontFamily="sans-serif-light"
+
+                 android:text="All financial details will be encrypted"
+
+                />
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+        <LinearLayout
+            android:id="@+id/selectPaymentLayout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:layout_marginTop="@dimen/spacing_normal"
+            android:orientation="vertical"
+             android:background="#efefef"
+            android:visibility="gone"
+            >
+
+
+            <android.support.v4.view.ViewPager
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/spacing_normal"
+                  android:id="@+id/viewpager"
+           />
+
+        </LinearLayout>
+
+
+
+        <TextView
+            style="@style/TextAppearance.AppCompat.Small"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/spacing_normal"
+            android:fontFamily="sans-serif-light"
+            android:textColor="@color/colorAccent"
+            android:text="Add a new payment method"
+
+            />
+
+
+        <LinearLayout
+            android:id="@+id/addPaymentLayout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:orientation="vertical"
+
+            >
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/po_recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                 android:clipToPadding="false"/>
+
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+
+        <ImageView
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+             android:src="@drawable/untitled"
+            android:alpha="0.5"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:tint="#efefef"/>
+
+
+    </RelativeLayout>
+
+
+
+    <FrameLayout
+        android:id="@+id/frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/bottom_sheet_behavior"
+        app:behavior_hideable="false"
+        app:behavior_peekHeight="0dp"
+        android:background="@color/white"
+        android:layout_marginTop="?attr/actionBarSize"
+        >
+
+
+        <include layout="@layout/fregment_visa"
+
+                 />
+
+
+    </FrameLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

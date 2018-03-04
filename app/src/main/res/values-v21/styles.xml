@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:colorBackground">@color/white_87</item>
+        <item name="colorButtonNormal">@color/colorPrimary</item>
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+         <item name="android:textViewStyle">@style/AppTheme.Widget.TextView</item>
+         <item name="preferenceTheme">@style/TestTheme</item>
+         <item name="android:popupMenuStyle">@style/AppTheme.PopUp</item>
+         <item name="android:alertDialogTheme">@style/AppAlertDialog</item>
+        <item name="android:dialogTheme">@style/AppDialog</item>
+
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+
+
+    </style>
+
+
+    <style name="ServiceTheme" parent="AppTheme">
+        <item name="android:windowTranslucentNavigation">true</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+    </style>
+
+
+    <style name="TestTheme" parent="AppTheme">
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:itemBackground">?attr/selectableItemBackground</item>
+    </style>
+
+    <style name="AppTheme.Widget"/>
+
+    <style name="AppTheme.Widget.TextView" parent="android:Widget.Holo.Light.TextView">
+     </style>
+
+
+    <style name="AppTheme_2" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorButtonNormal">@color/colorPrimary</item>
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+        <item name="actionOverflowButtonStyle">@style/popup</item>
+        <item name="android:colorButtonNormal" tools:ignore="NewApi">@color/colorPrimary</item>
+
+    </style>
+
+    <style name="LoginTheme" parent = "AppTheme" >
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:statusBarColor">@color/colorAccent</item>
+
+    </style>
+
+
+
+    <style name="AppTheme_2.NoActionBar" >
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="DrawerArrowStyle" parent="@style/Widget.AppCompat.DrawerArrowToggle">
+       <!-- <item name="spinBars">true</item>-->
+        <item name="color">@android:color/white</item>
+    </style>
+
+    <style name="MyEditText" parent="Theme.AppCompat">
+        <item name="colorControlNormal">@color/colorAccent</item>
+        <item name="colorControlActivated">@color/colorAccent</item>
+        <item name="colorControlHighlight">@color/colorAccent</item>
+        <item name="android:textColor">@color/text_black_87</item>
+        <item name="android:textColorHint">@color/colorAccent</item>
+
+    </style>
+
+
+    <style name="AppAlertDialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <!-- To tint the buttons -->
+        <item name="android:itemPadding">@dimen/alert_def_padding</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorHint">@color/colorAccent</item>
+        <item name="titleTextColor">@color/colorAccent</item>
+    </style>
+
+
+
+
+
+    <style name="AppDialog" parent="Theme.AppCompat.Light.Dialog">
+        <!-- To tint the buttons -->
+        <item name="android:background">@color/white</item>
+        <item name="android:textColorPrimary">@color/text_black_87</item>
+        <item name="android:textColorSecondary">@android:color/secondary_text_light</item>
+        <item name="android:itemPadding">@dimen/alert_def_padding</item>
+        <item name="panelBackground">@color/white</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppPreferenceTheme" parent="@style/PreferenceThemeOverlay.v14.Material">
+        <item name="preferenceFragmentCompatStyle">@style/AppPreferenceFragmentCompatStyle</item>
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <item name="android:textColorSecondary">@color/text_white_75</item>
+        <item name="android:textColorTertiary">@color/text_white_75</item>
+        <item name="android:background">@color/colorPrimary</item>
+
+
+    </style>
+
+    <style name="AppPreferenceFragmentCompatStyle" parent="@style/PreferenceFragment.Material">
+
+        <item name="android:itemBackground">?attr/selectableItemBackground</item>
+    </style>
+
+
+    <style name="AppAlertDialogContent" parent="Theme.AppCompat.DayNight">
+        <!-- To tint EditText and TimePicker -->
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="ErrorText" parent="TextAppearance.AppCompat.Small">
+        <item name="android:textStyle">italic</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/text_white_75</item>
+
+    </style>
+
+    <style name="CustomTabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="textAllCaps">false</item>
+        <item name="android:textSize">@dimen/text_size_normal</item>
+
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:textColorSecondary">@color/text_white_87</item>
+    </style>
+
+    <style name="popup" parent="Widget.AppCompat.ActionButton.Overflow">
+        <item name="android:textColorSecondary">@color/text_white_87</item>
+        <item name="android:textColorPrimary">@color/text_white_87</item>
+        <item name="android:tint">@color/text_white_87</item>
+
+    </style>
+
+
+    <style name="AppTheme.PopUp" parent="Widget.AppCompat.ListPopupWindow">
+        <item name="android:textColorSecondary">@color/text_white_75</item>
+        <item name="android:textColorPrimary">@color/text_white_87</item>
+        <item name="android:tint">@color/text_white_87</item>
+
+
+    </style>
+
+    <style name="AppTheme.ActionBar" parent="Widget.AppCompat.ActionBar.Solid">
+        <!-- Blue background color & black bottom border -->
+        <item name="android:background">@color/colorPrimary</item>
+    </style>
+
+
+
+
+    <style name="Theme.Transparent" parent="AppTheme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+         <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+
+</resources>

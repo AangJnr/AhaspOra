@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:layout_margin="@dimen/spacing_normal"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/visa_vector_black"
+
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Card Details"
+                style="@style/TextAppearance.AppCompat.Large"
+                android:fontFamily="sans-serif-light"
+                android:textColor="@color/colorPrimary"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/spacing_normal"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your card information"
+                style="@style/TextAppearance.AppCompat.Small"
+                android:fontFamily="sans-serif-light"
+                android:textColor="@color/text_black_87"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/spacing_normal"
+                android:layout_marginBottom="@dimen/spacing_2"
+                />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+
+
+    <include layout="@layout/divider_view"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+         >
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/cardNoLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Card Number"
+            app:errorTextAppearance="@style/ErrorText"
+            android:layout_marginLeft="@dimen/spacing_half"
+            android:layout_marginRight="@dimen/spacing_half"
+            android:layout_marginTop="@dimen/spacing_half"
+            >
+
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="numberSigned"
+                android:maxLines="1"
+                android:maxLength="19"
+                 android:background="@color/transparent"
+                android:padding="@dimen/spacing_normal"
+
+                android:textColor="@color/text_black_87"
+                android:textSize="@dimen/text_size_normal"
+                />
+
+
+        </android.support.design.widget.TextInputLayout>
+
+
+
+        <include layout="@layout/divider_view"/>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/nameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name on card"
+            app:errorTextAppearance="@style/ErrorText"
+            android:layout_marginLeft="@dimen/spacing_half"
+            android:layout_marginRight="@dimen/spacing_half"
+            android:layout_marginTop="@dimen/spacing_normal"
+            >
+
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textPersonName"
+                android:maxLines="1"
+                 android:background="@color/transparent"
+                android:padding="@dimen/spacing_normal"
+                android:textColor="@color/text_black_87"
+                android:textSize="@dimen/text_size_normal"
+                />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+
+        <include layout="@layout/divider_view"/>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                >
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    >
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/monthLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Month"
+                        app:errorTextAppearance="@style/ErrorText"
+
+                        android:layout_marginLeft="@dimen/spacing_half"
+                        android:layout_marginRight="@dimen/spacing_half"
+                        android:layout_marginTop="@dimen/spacing_normal"
+                        >
+
+
+                        <android.support.design.widget.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:inputType="numberDecimal"
+                            android:maxLines="1"
+                            android:maxLength="2"
+                             android:background="@color/transparent"
+                            android:padding="@dimen/spacing_normal"
+                            android:textColor="@color/text_black_87"
+                            android:textSize="@dimen/text_size_normal"
+                            />
+
+                    </android.support.design.widget.TextInputLayout>
+
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    >
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/yearLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Year"
+                        app:errorTextAppearance="@style/ErrorText"
+
+                        android:layout_marginLeft="@dimen/spacing_half"
+                        android:layout_marginRight="@dimen/spacing_half"
+                        android:layout_marginTop="@dimen/spacing_normal"
+                        >
+
+
+                        <android.support.design.widget.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:inputType="numberDecimal"
+                            android:maxLines="1"
+                            android:maxLength="2"
+                             android:background="@color/transparent"
+                            android:padding="@dimen/spacing_normal"
+                            android:textColor="@color/text_black_87"
+                            android:textSize="@dimen/text_size_normal"
+                            />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                >
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/cvvLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:hint="CVV"
+                    app:errorTextAppearance="@style/ErrorText"
+                    android:layout_marginLeft="@dimen/spacing_half"
+                    android:layout_marginRight="@dimen/spacing_half"
+                    android:layout_marginTop="@dimen/spacing_normal"
+                    >
+
+
+                    <android.support.design.widget.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="numberDecimal"
+                        android:maxLines="1"
+                         android:maxLength="3"
+                        android:background="@color/transparent"
+                        android:padding="@dimen/spacing_normal"
+                        android:textColor="@color/text_black_87"
+                        android:textSize="@dimen/text_size_normal"
+                        />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <include layout="@layout/divider_view"/>
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/saveCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/spacing_normal"
+        android:layout_marginBottom="@dimen/spacing_normal"
+        android:background="?attr/selectableItemBackground"
+        >
+
+        <CheckBox
+            android:id="@+id/saveCardCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save card details"
+            />
+
+    </LinearLayout>
+
+
+
+    <Button
+        android:background="@drawable/rounded_button"
+        android:layout_marginLeft="@dimen/spacing_2"
+        android:layout_marginRight="@dimen/spacing_2"
+        android:id="@+id/pay_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_normal"
+        android:layout_marginBottom="@dimen/spacing_normal"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_normal"
+        android:text="Pay"
+        android:clickable="true"
+        android:layout_gravity="bottom|center"
+        android:theme="@style/AccentButton"
+        />
+
+
+
+</LinearLayout>

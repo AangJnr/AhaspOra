@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/comment_section"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/spacing_normal"
+            >
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/user_image"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/place_holder"
+                android:layout_centerVertical="true"
+
+                />
+
+
+            <EditText
+                android:id="@+id/comment_edittext"
+                android:layout_toRightOf="@id/user_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:padding="@dimen/spacing_normal"
+                android:layout_toLeftOf="@+id/post"
+                android:hint="Write something..."
+                android:textSize="@dimen/text_size_small"
+                android:layout_marginRight="@dimen/spacing_normal"
+                android:layout_centerVertical="true"
+
+                />
+
+
+            <ImageView
+                android:id="@+id/photo"
+                android:tint="@color/text_black_87"
+                android:layout_toLeftOf="@id/post"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/shape_padding"
+                android:src="@drawable/ic_photo_camera_grey_400_24dp"
+                />
+
+            <TextView
+                android:id="@+id/post"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="POST"
+                android:layout_alignParentRight="true"
+                style="@style/TextAppearance.AppCompat.Button"
+                android:textSize="@dimen/text_size_tiny"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/spacing_half"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                />
+
+
+            <ProgressBar
+                android:visibility="gone"
+                android:id="@+id/progress_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                style="?android:attr/progressBarStyleSmall"
+                />
+
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:id="@+id/imageRl"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_above="@+id/rl2"
+            android:layout_marginTop="@dimen/spacing_normal"
+
+            >
+
+            <ImageView
+                android:id="@+id/selectedImage"
+                android:layout_width="match_parent"
+                android:src="@drawable/place_holder"
+                android:scaleType="centerCrop"
+                android:layout_height="match_parent">
+
+
+            </ImageView>
+
+
+
+            <ImageView
+                android:id="@+id/removeImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/spacing_half"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_cancel_white_18dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+
+                />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

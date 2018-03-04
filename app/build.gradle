@@ -1,0 +1,76 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+    buildToolsVersion "26.0.2"
+    defaultConfig {
+        applicationId "com.app.ahaspora"
+        minSdkVersion 16
+        targetSdkVersion 27
+        versionCode 1
+         versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    allprojects {
+        repositories {
+            maven { url 'https://jitpack.io' }
+
+            jcenter()
+
+            maven { url "https://maven.google.com" }
+        }
+    }
+
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:design:27.0.2'
+    compile 'com.android.support:support-v4:27.0.2'
+    compile 'com.android.support:preference-v14:27.0.2'
+    compile 'com.android.support:appcompat-v7:27.0.2'
+    compile 'com.android.support:support-vector-drawable:27.0.2'
+    testCompile 'junit:junit:4.12'
+    compile 'com.google.code.gson:gson:2.8.0'
+    compile 'com.android.support:percent:27.0.2'
+    compile 'com.amirarcane.recent-images:recentimages:2.0.1'
+
+    compile 'com.github.bluejamesbond:textjustify-android:2.1.6'
+    compile 'org.ocpsoft.prettytime:prettytime:4.0.1.Final'
+    compile 'com.android.support:cardview-v7:27.0.2'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.github.dmytrodanylyk:android-morphing-button:98a4986e56'
+    compile 'de.hdodenhof:circleimageview:2.1.0'
+    compile 'com.github.Yalantis:SearchFilter:v1.0.4'
+    compile 'com.github.jd-alexander:LikeButton:0.2.1'
+    compile 'com.android.support:palette-v7:27.0.2'
+    compile 'com.google.firebase:firebase-firestore:11.8.0'
+    compile 'com.google.firebase:firebase-storage:11.8.0'
+    compile 'com.android.volley:volley:1.1.0'
+    compile 'com.github.devlight:infinitecycleviewpager:1.0.2'
+    compile 'com.google.android.gms:play-services-gcm:11.8.0'
+    compile 'com.google.android.gms:play-services-maps:11.8.0'
+    compile 'com.google.android.gms:play-services-places:11.8.0'
+    compile 'com.stepstone.apprating:app-rating:2.2.0'
+    compile 'com.movile:creditcardguide:1.2-beta'
+    compile 'com.libRG:customtextview:1.2'
+    compile 'com.alimuzaffar.lib:pinentryedittext:1.3.1'
+    compile 'com.hlab.fabrevealmenu:fab-reveal-menu:1.0.3'
+
+
+
+
+}
+
+
+apply plugin: 'com.google.gms.google-services'

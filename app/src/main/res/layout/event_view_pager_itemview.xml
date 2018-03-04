@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="3dp">
+
+    <RelativeLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/placeholder2"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:clickable="true"
+        android:focusable="true"
+        />
+
+
+    <TextView
+        android:id="@+id/body_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="This is the event I've been talking all day about! It's happening live at the Barracks! It's starting live at 12 midnight all the way to the following morning till you drop! Be there!!! or be square."
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:padding="@dimen/spacing_normal"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_medium"
+        android:textStyle="bold"
+        android:background="#8a6e6e6e"
+        android:maxLines="5"
+        android:ellipsize="end"
+
+         />
+
+    <Button
+        android:id="@+id/status_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Going?"
+        android:textStyle="bold"
+        android:textSize="@dimen/text_size_small"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/spacing_normal"
+        android:theme="@style/WhiteButtonRound"
+        />
+
+
+</RelativeLayout>
+
+</android.support.v7.widget.CardView>

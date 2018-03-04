@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/white"
+
+    android:transitionName="trex_parent"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/spacing_3"
+        android:orientation="vertical">
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/parent_layout"
+        android:layout_width="match_parent"
+        android:padding="@dimen/spacing_normal"
+        android:layout_height="wrap_content"
+        android:transitionName="trex_parent"
+        android:clipToPadding="false"
+         >
+
+        <ImageView
+            android:id="@+id/company_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_company"
+            android:layout_marginTop="@dimen/spacing_normal"
+            android:transitionName="trex_icon"
+            android:tint="@color/divider"
+
+            />
+
+
+
+            <TextView
+                 android:id="@+id/job_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Job Title"
+                style="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold"
+                android:textSize="@dimen/text_size_medium"
+                android:layout_toRightOf="@id/company_icon"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/spacing_normal"
+                android:layout_marginLeft="@dimen/spacing_normal"
+                 android:transitionName="trex_title"
+
+                />
+
+
+            <TextView
+                android:layout_toRightOf="@id/company_icon"
+                android:orientation="vertical"
+                android:layout_below="@+id/job_title"
+                android:layout_marginLeft="@dimen/spacing_normal"
+                android:id="@+id/company_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                 android:text="COMPANY NAME"
+                android:textColor="@android:color/primary_text_light"
+                android:layout_marginTop="@dimen/spacing_half"
+                 android:transitionName="trex_company_name"
+
+                />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:layout_marginLeft="@dimen/spacing_normal"
+        android:layout_marginRight="@dimen/spacing_normal"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        >
+
+
+        <RelativeLayout
+            android:id="@+id/summary_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            >
+
+
+         <TextView
+                android:id="@+id/body_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:textColor="@android:color/secondary_text_light"
+                android:transitionName="trex_body"
+             android:clickable="true"
+                />
+
+            <WebView
+                android:id="@+id/job_summary"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                  android:transitionName="trex"
+                />
+
+        </RelativeLayout>
+
+
+
+    </ScrollView>
+    </LinearLayout>
+
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="16dp"
+        app:backgroundTint="@color/colorAccentBlue"
+        app:fabSize="normal"
+        app:srcCompat="@drawable/ic_menu_white_24dp" />
+
+    <com.hlab.fabrevealmenu.view.FABRevealMenu
+        android:id="@+id/fabMenu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        app:animateItems="true"
+        app:menuBackgroundColor="@color/white2"
+        app:menuDirection="left"
+        app:menuRes="@menu/fam_menu"
+        app:menuTitleDisabledTextColor="@color/divider"
+        app:menuSize="small"
+         app:menuTitleTextColor="@color/text_black_87"
+        app:showOverlay="true"
+        app:showTitle="true" />
+
+</RelativeLayout>

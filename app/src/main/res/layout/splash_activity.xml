@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/splash_layout"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              tools:context=".activities.SplashActivity"
+    android:background="@color/white2"
+    >
+
+
+
+    <LinearLayout
+        android:id="@+id/splash_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+          >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ahasp"
+            android:textColor="@color/textColorPrimaryLight"
+            android:textSize="@dimen/text_size_large"
+             android:fontFamily="sans-serif-light"
+            />
+
+       <ImageView
+           android:layout_width="@dimen/splash_icon_size"
+           android:layout_height="@dimen/splash_icon_size"
+           android:src="@drawable/africa_sleek"
+
+           />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ra"
+            android:textColor="@color/textColorPrimaryLight"
+            android:textSize="@dimen/text_size_large"
+            android:fontFamily="sans-serif-light"
+            />
+    </LinearLayout>
+
+
+</RelativeLayout>

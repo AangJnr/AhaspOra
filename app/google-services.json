@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "764355779450",
+    "firebase_url": "https://ahaspora-54f9f.firebaseio.com",
+    "project_id": "ahaspora-54f9f",
+    "storage_bucket": "ahaspora-54f9f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:764355779450:android:6c56f4891d766673",
+        "android_client_info": {
+          "package_name": "com.app.ahaspora"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "764355779450-ulrj0uqbm6n0ii70og62cm6q1v31m2dm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.ahaspora",
+            "certificate_hash": "a1a46854a198182521f91f82c48474ddad5f9ee1"
+          }
+        },
+        {
+          "client_id": "764355779450-hhfb8f2rot1ag8i09va57nvd2fa9lhkv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCVmDnXF7sEHGJjRhBwwZzMXxGBnPg4KHA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "764355779450-hhfb8f2rot1ag8i09va57nvd2fa9lhkv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

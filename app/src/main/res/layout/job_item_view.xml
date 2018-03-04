@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="0dp"
+    app:cardElevation="1dp"
+    android:transitionName="trex_parent"
+    android:layout_marginBottom="@dimen/spacing_quarter"
+
+    >
+
+
+    <View
+        android:id="@+id/urgency_indicator"
+        android:layout_width="3dp"
+        android:layout_height="@dimen/spacing_3"
+         />
+
+
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+         android:paddingTop="@dimen/spacing_normal"
+        android:paddingLeft="@dimen/spacing_normal"
+        android:paddingRight="@dimen/spacing_normal"
+        android:paddingBottom="@dimen/spacing_half"
+        android:id="@+id/parent_layout"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:background="?attr/selectableItemBackground"
+
+        >
+
+
+        <LinearLayout
+            android:id="@+id/lay5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/spacing_half"
+                app:srcCompat="@drawable/ic_date_range_black_18dp"
+                android:tint="@color/colorAccent"
+                />
+
+            <TextView
+                android:id="@+id/deadline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2 weeks ago"
+                android:textSize="@dimen/text_size_tiny"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold"
+                />
+
+
+
+
+
+        </LinearLayout>
+
+
+
+        <View
+            android:visibility="gone"
+            android:layout_marginLeft="@dimen/spacing_normal"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/divider"
+            android:layout_below="@id/lay5"
+            android:layout_marginTop="@dimen/spacing_half"
+              />
+
+
+
+
+
+
+        <RelativeLayout
+            android:id="@+id/lay1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lay5"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/spacing_normal"
+            >
+
+
+            <ImageView
+                android:id="@+id/company_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_company"
+                android:layout_marginRight="@dimen/spacing_normal"
+                android:transitionName="trex_icon"
+
+                />
+
+
+
+
+
+
+
+            <RelativeLayout
+                android:id="@+id/title_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/company_icon"
+
+                >
+
+
+                <TextView
+                    android:id="@+id/job_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Product Designer"
+                    android:textStyle="bold"
+                    android:textColor="@color/text_black_87"
+                    android:textSize="@dimen/text_size_medium"
+                    android:layout_marginBottom="@dimen/spacing_half"
+                    android:transitionName="trex_title"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:layout_toLeftOf="@id/starred"
+                    android:layout_centerVertical="true"
+                    />
+
+
+
+                <ImageView
+                    android:id="@+id/starred"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/spacing_half"
+                    app:srcCompat="@drawable/ic_star_border_grey_400_18dp"
+                    android:clickable="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_toLeftOf="@id/info"
+                    />
+
+
+                <ImageView
+                    android:visibility="gone"
+                    android:id="@+id/info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/spacing_half"
+                    android:clickable="true"
+                    android:layout_alignParentRight="true"
+                    app:srcCompat="@drawable/ic_info_outline_white_18dp"
+                    android:tint="@android:color/tertiary_text_light"
+
+                    />
+
+
+
+
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/lay2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title_layout"
+                android:layout_toRightOf="@id/company_icon"
+
+                >
+
+
+                <TextView
+                    android:id="@+id/company_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="GOOGL"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/tertiary_text_light"
+                    android:textSize="@dimen/text_size_small"
+                    android:layout_gravity="center_vertical"
+                    android:transitionName="trex_company_name"
+
+                    />
+
+
+
+                <View
+                    android:id="@+id/view1"
+                    android:layout_width="3dp"
+                    android:layout_height="3dp"
+                    android:background="@drawable/circle"
+                     android:layout_marginLeft="@dimen/spacing_half"
+                    android:layout_marginRight="@dimen/spacing_half"
+                    android:layout_gravity="center_vertical"
+
+                    />
+
+
+
+                <TextView
+                    android:id="@+id/location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ACCRA, GH"
+                    android:textSize="@dimen/text_size_small"
+                    android:textColor="@android:color/tertiary_text_light"
+                    android:layout_gravity="center_vertical"
+
+                    />
+
+
+            </LinearLayout>
+
+
+
+            <RelativeLayout
+                android:id="@+id/lay4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lay2"
+                android:layout_toRightOf="@id/company_icon"
+                android:layout_marginTop="@dimen/spacing_normal"
+                android:layout_marginBottom="@dimen/spacing_normal"
+                android:transitionName="trex"
+
+                >
+
+
+
+                <TextView
+                    android:id="@+id/body"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:maxLines="5"
+                    android:elegantTextHeight="true"
+                    android:textAlignment="gravity"
+                    android:ellipsize="end"
+                    android:transitionName="trex_body"
+                    android:textColor="@color/text_black_87"
+
+                    />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+
+
+        <RelativeLayout
+            android:id="@+id/rl3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+             android:layout_marginBottom="@dimen/spacing_half"
+            android:layout_marginLeft="@dimen/spacing_normal"
+            android:layout_below="@id/lay1"
+            android:clickable="false"
+            android:focusable="false"
+             >
+
+
+
+            <ImageView
+                android:id="@+id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_email_grey_500_18dp"
+                android:layout_centerVertical="true"
+                android:clickable="true"
+                android:tint="@color/colorAccent"
+                android:elevation="3dp"
+                android:layout_marginLeft="@dimen/spacing_normal"
+                android:padding="@dimen/spacing_normal"
+                />
+
+            <TextView
+                android:id="@+id/tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tag"
+                android:layout_centerVertical="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_small"
+                android:padding="@dimen/spacing_half"
+                android:layout_marginLeft="@dimen/spacing_2"
+                android:layout_alignParentRight="true"
+
+
+                />
+
+
+
+            <RatingBar
+                android:visibility="gone"
+                android:id="@+id/rating"
+                style="@style/RatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="3"
+                android:rating="3"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:clickable="true"
+                android:focusable="true"
+                android:paddingTop="@dimen/spacing_half"
+                android:paddingBottom="@dimen/spacing_half"
+                android:background="?attr/selectableItemBackground"
+                />
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/date_posted"
+            android:layout_below="@id/rl3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Posted yesterday"
+            android:textSize="@dimen/text_size_tiny"
+            android:textColor="@color/gray"
+            android:textStyle="italic"
+            android:layout_marginBottom="@dimen/spacing_half"
+            />
+
+
+
+
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>

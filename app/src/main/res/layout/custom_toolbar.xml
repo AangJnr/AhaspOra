@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<android.support.v7.widget.Toolbar
+    android:id="@+id/toolbar"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ahasp"
+            android:textColor="@color/textColorPrimaryLight"
+            style="@style/Base.TextAppearance.Widget.AppCompat.Toolbar.Title"
+            android:fontFamily="sans-serif-light"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="O"
+            android:textColor="@color/textColorPrimaryLight"
+            style="@style/Base.TextAppearance.Widget.AppCompat.Toolbar.Title"
+            android:fontFamily="sans-serif-light"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ra"
+            android:textColor="@color/textColorPrimaryLight"
+            style="@style/Base.TextAppearance.Widget.AppCompat.Toolbar.Title"
+            android:fontFamily="sans-serif-light"
+            />
+    </LinearLayout>
+
+
+
+
+</android.support.v7.widget.Toolbar>
+
